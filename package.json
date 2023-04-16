@@ -1,0 +1,15 @@
+{
+  "name": "introtoapis",
+  "version": "1.0.0",
+  "description": "This is aimed to be tought in [AliceCode](https://alicecode.org/en) and is based\r  on [The Coding Train course](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X) parts 2.1-2.4.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

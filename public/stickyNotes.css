@@ -1,0 +1,186 @@
+/* 
+original style file was taken from here: 
+https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934
+*/
+
+@font-face {
+    font-family: "Reenie Beanie";
+    src: url('assets/ReenieBeanie-Regular.ttf');
+}
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #959a3c, rgb(247, 255, 192));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 20px 20px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 20px 20px;
+  color:#fff;
+}
+body {
+    margin: 20px auto;
+    font-family: 'Lato';
+    background:#666;
+    color:#fff;
+  }
+  
+  *{
+    margin:0;
+    padding:0;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  p {
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+  }
+  ul,li{
+    list-style:none;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:2em;
+  }
+  ul li a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+  }
+  
+  ul li:nth-child(even) a{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  ul li:nth-child(5n) a{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  
+  ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
+  ul li{
+    margin:1em;
+  }
+
+  div a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+    margin:1em;
+  }
+
+  div a:hover,a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+
+    
+  div a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+    margin:3em;
+  }
+
+  div a:hover,a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
+  button{
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 26px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 30px;
+  }
+  
+  button:hover {
+    background-color: rgb(247, 255, 192);
+    color: black;
+  }
+
+  button:disabled,
+  button[disabled] {
+      border: 1px solid #999999;
+      background-color: darkgrey;
+      color: #fff;
+      cursor: not-allowed;
+  }
+
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.btncolumn {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#serverResponse{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
