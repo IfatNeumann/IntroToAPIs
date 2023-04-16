@@ -14,3 +14,11 @@ The structure of the project with the needed files and alerts explaining what sh
 * This project can be run in this form
 * The html files and the css file do not need an update! Only the JS files: server.js, saveNotes.js, getNotes.js
 * requires `npm intall` to install dependencies, and `nodemon server.js` to run the sever
+
+### Step 2
+* Added `POST` request: user can send notes to the server.
+* Added `GET` request: user can get all the notes presented in the html.
+
+### Step 3 (in planning)
+* Add `UPDATE` for when the user enters the same name with a different color
+* Add `DELETE` so the user can delete a specific note: When the color field is delete
